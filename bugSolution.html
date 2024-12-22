@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Correct way to get the element and content:
+    let divElement = document.getElementById("myDiv");
+    let divContent = divElement.innerHTML;
+    console.log(divContent); // Output: This is some text.
+
+    // Correct way to change the content:
+    divElement.innerHTML = "New Text";
+    console.log(divElement.innerHTML); //Output: New Text
+  </script>
+</body>
+</html>
