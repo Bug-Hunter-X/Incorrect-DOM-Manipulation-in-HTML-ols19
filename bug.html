@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrect way to get the element: using the id as a property.
+    let divContent = document.getElementById("myDiv").innerHTML;
+    console.log(divContent); //Output: This is some text.
+
+    //Another incorrect way, missing the getElementById()
+    let div = "myDiv";
+    div.innerHTML = "New Text"; //Throws an error. Type error: div.innerHTML is not a function
+    console.log(div.innerHTML); // Throws error.
+  </script>
+</body>
+</html>
